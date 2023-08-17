@@ -4,9 +4,9 @@ from django.http import HttpResponse
 # Create your views here.
 
 
-def index(request):
-    return HttpResponse('Hello, epta!')
+def weather(request):
+    return render(request=request, template_name='main/index.html')
 
 
 def about(request):
-    return HttpResponse('О нас')
+    return render(request=request, template_name='main/index.html')
