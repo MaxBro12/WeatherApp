@@ -1,18 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div class="main">
-        <div class="weather">
-            <p class="place">{{ place }}</p>
-            <div class="icontemp">
-                <img src="" alt="">
-                <p class="temp">{{ temp }}</p>
-            </div>
+    <div class="weather">
+        <p class="place" title="Местоположение">{{ place }}</p>
+        <div class="icontemp">
+            <img src="../../static/images/test.png" alt="" class="icon">
+            <p class="temp" title="Температура">{{ temp }}  ºС</p>
         </div>
-        <div class="adtinfo">
-            <p class="wind">{{ wind }}</p>
-            <p class="pressure">{{ pressure }}</p>
-            <p class="humidity">{{ humidity }}</p>
-        </div>
+    </div>
+    <div class="adtinfo">
+        <p class="wind" title="Скорость ветра">{{ wind }} м/с</p>
+        <p class="pressure" title="Давление">{{ pressure }} мм</p>
+        <p class="humidity" title="Влажность">{{ humidity }}%</p>
     </div>
 {% endblock %}
