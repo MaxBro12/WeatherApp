@@ -2,6 +2,17 @@
 
 {% block content %}
     <div class="main">
-        
+        <div class="weather">
+            <p class="place">{{ place }}</p>
+            <div class="icontemp">
+                <img src="" alt="">
+                <p class="temp">{{ temp }}</p>
+            </div>
+        </div>
+        <div class="adtinfo">
+            <p class="wind">{{ wind }}</p>
+            <p class="pressure">{{ pressure }}</p>
+            <p class="humidity">{{ humidity }}</p>
+        </div>
     </div>
 {% endblock %}
