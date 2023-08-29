@@ -1,19 +1,18 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # Create your views here.
 
 
 def weather(request):
-    test = {
-        'place': 'г. Москва',
-        'temp': '32.1',
-        'icon': '',
-        'wind': 'N 3.1',
-        'pressure': '772',
-        'humidity': '50'
+    data = {
+        'place': ' ',
+        'temp': ' ',
+        'icon': 'test',
+        'wind': ' ',
+        'pressure': ' ',
+        'humidity': ' '
     }
-    return render(request=request, template_name='main/index.html', context=test)
+    return render(request=request, template_name='main/index.html', context=data)
 
 
 def about(request):
