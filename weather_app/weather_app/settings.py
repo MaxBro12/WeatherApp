@@ -11,7 +11,22 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 import os
+from dotenv import load_dotenv
 from pathlib import Path
+
+from geopy import Nominatim
+
+
+GEOLOCATOR = Nominatim(user_agent='weather app')
+PLACE = 'Moscow'
+
+if not load_dotenv('../.env'):
+    raise Exception()
+
+YANDEX_API_TOKEN = os.getenv('API_KEY')
+YANDEX_URL = 'https://api.weather.yandex.ru/v2/informers?'
+
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent

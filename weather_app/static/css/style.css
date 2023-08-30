@@ -124,3 +124,15 @@ div.adtinfo>p {
     font-weight: 500;
     text-align: center;
 }
+
+div.error {
+    padding: 10px;
+    margin: auto;
+
+    font-size: large;
+    font-weight: 500;
+
+    border-radius: inherit;
+    border-width: inherit;
+    background-color: rgb(218, 218, 218);
+}
